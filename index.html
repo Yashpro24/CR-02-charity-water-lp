@@ -3,45 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
+    <title>Charity: Water - Be the Drop</title>
+    <!-- Use Google Fonts for Avenir if available -->
+    <link href="https://fonts.googleapis.com/css2?family=Avenir&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
+    <!-- Logo section at the top left of the page -->
+    <div class="main-logo">
+        <!-- Logo image -->
+        <img src="img/water-can-transparent.png" alt="Charity: Water Logo" class="main-logo-img">
+        <!-- Logo text -->
+        <span class="main-logo-text">Charity: Water</span>
+    </div>
+
+    <!-- Hero Section from Canvas Design -->
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+        <!-- Navigation bar at the top of the hero section -->
+        <div class="navbar">
+          <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#donate">Donate</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <!-- ...existing hero content... -->
+        <div class="hero-content">
+            <h1>Be the Drop That Starts the Wave 💧</h1>
+            <p>Join us in bringing clean water to every person on the planet. 100% of donations fund water projects.</p>
         </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
+    <!-- Merged Our Story Section -->
+    <section class="story">
+        <h2>Our Story</h2>
+        <p>
+            In 2006, a small team set out on a mission to end the global water crisis. What started as a simple idea—bring clean water to those in need—has grown into a global movement. With over 111,000 water projects funded and more than 15 million people served, charity: water continues to prove that change is possible when people come together. Every campaign, every donation, every drop brings us closer to a world where everyone has access to life’s most basic need: clean water.
+        </p>
+    </section>
+
+    <!-- Info Section (now without duplicate Our Story) -->
+    <section class="info">
+        <h2>Our Mission</h2>
+        <p>We bring clean and safe drinking water to people in developing countries, with 100% of public donations going directly to water projects.</p>
+        <h2>Your Impact</h2>
+        <p>Every dollar you donate helps transform lives. Your support builds sustainable water sources that improve health, education, and opportunity.</p>
+        <h2>Take Action</h2>
+        <p>Whether you're a student, educator, or just someone who cares, there's a way for you to get involved. Start your own campaign or spread the word!</p>
+        <button class="cta-button">!!! Join the Movement !!!</button>
+    </section>
+
+    <!-- Real-World Impact Story Section (upgraded version) -->
+    <section class="impact-story upgraded">
+      <div class="impact-wrapper">
+        <div class="impact-image-container">
+          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80" alt="Amina smiling and holding clean water" class="impact-image">
+        </div>
+        <div class="impact-text">
+          <h2>Real Impact: <span class="highlight">Meet Amina</span></h2>
+          <blockquote>
+            “Before, I spent hours walking for water. Now, I spend those hours in school.”
+          </blockquote>
+          <p>
+            Amina's life has transformed. With a clean water well in her village, she now enjoys better health, education, and hope for the future. Your support makes stories like hers possible.
+          </p>
+          <a href="#donate" class="cta-button">Support More Lives</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Section with a bold 'Donate Now' button (kept from previous design) -->
     <section class="call-to-action">
         <h2>Make a Difference</h2>
         <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
         <a href="#" class="donate-button">Donate Now</a>
     </section>
 </body>
+
+<!-- New social footer with icons and follow text -->
+<footer class="social-footer">
+  <div class="social-footer-content">
+    <p class="follow-text">Follow us on Facebook, Twitter, and Instagram</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="img/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="img/twitter.png" alt="Twitter" />
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="img/Instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
+</footer>
 </html>
